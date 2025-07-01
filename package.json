@@ -1,33 +1,41 @@
 {
-  "name": "nyxccc",
-  "version": "1.0.0",
+  "name": "nyxccc_landing_page",
+  "version": "0.1.0",
+  "private": true,
   "description": "nyxc Community Capital Landing Page",
-  "main": "index.js",
   "scripts": {
-    "test": "run test",
-    "lint:fix": "eslint --fix 'index.js'",
-    "prettier:check": "prettier --config .prettierrc '*.js' --check",
-    "prettier:write": "prettier --config .prettierrc '*.js' --write"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.5.0",
+    "@react-three/drei": "^10.3.0",
+    "@react-three/fiber": "^9.1.2",
+    "three": "^0.177.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.177.0",
+    "eslint": "^9.24.0",
+    "eslint-config-next": "15.3.1",
+    "typescript": "^5.8.3"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NyxCarbon/nyxcCC-Landing.git"
   },
-  "keywords": [
-    "nyxccc"
-  ],
+  "keywords": ["nyxccc"],
   "author": "Brittany Salas",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NyxCarbon/nyxcCC-Landing/issues"
   },
-  "homepage": "https://github.com/NyxCarbon/nyxcCC-Landing#readme",
-  "devDependencies": {
-    "@types/node": "^22.15.17",
-    "eslint": "^9.26.0",
-    "eslint-config-prettier": "^10.1.4",
-    "eslint-plugin-prettier": "^5.4.0",
-    "prettier": "^3.5.3",
-    "typescript": "^5.8.3"
-  }
+  "homepage": "https://github.com/NyxCarbon/nyxcCC-Landing#readme"
 }

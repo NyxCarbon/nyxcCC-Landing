@@ -1,0 +1,52 @@
+
+.mainPage {
+  width: 100%;
+  position: relative;
+  background-color:#090012;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: var(--font-size-20);
+  color: var(--color-white);
+  font-family: var(--font-itc-avant-garde-gothic-std);
+  margin: 0;                /* ← Remove any margin */
+  padding: 0;               /* ← Remove any padding */
+}
+
+
+.pageContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent {
+  flex: 1;  /* ← Takes up remaining space */
+}
+
+.floatingBlob {
+  position: fixed;
+  bottom: 0;               /* ← Start from bottom of page */
+  left: 0;
+  width: 100vw;
+  height: 80vh;            /* ← Cover bottom portion of viewport */
+  z-index: -1;            /* ← Behind all content */
+  object-fit: cover;
+  pointer-events: none;    /* ← Don't interfere with interactions */
+  animation: fadeIn 0.5s ease-in;  /* ← Smooth fade-in when appearing */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

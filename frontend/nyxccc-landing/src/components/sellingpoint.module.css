@@ -1,0 +1,314 @@
+.fadedBoxChild,
+.fadedBoxItem {
+  align-self: stretch;
+  position: relative;
+}
+.fadedBoxChild {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 227, 232, 0.08),
+    rgba(255, 227, 232, 0)
+  );
+  height: 246px;
+}
+.fadedBoxItem {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 227, 232, 0),
+    rgba(255, 227, 232, 0.1)
+  );
+  height: 234px;
+}
+.fadedBox {
+  width: 100%;
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+  z-index: 0;
+}
+.lineElements {
+  height: 303px;
+  width: 252px;
+  position: relative;
+}
+.lineElementsParent {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0;
+  z-index: 1;
+  padding: 0 10%;
+}
+
+.sellingPointsFrameDesign {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  z-index: 1;
+}
+.sellingPointsFrameDesign {
+  height: 100%;
+  width: 100%;
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  padding: var(--padding-80) 5vw;
+  box-sizing: border-box;
+  gap: 15vw;
+  z-index: 0;
+}
+.databaseIcon {
+  height: 33px;
+  width: 24px;
+  position: relative;
+  z-index: 0;
+  margin: 14 auto;
+}
+.iconBox,
+.iconBoxChild,
+.iconBoxItem {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.iconBoxChild {
+  right: 0;
+  bottom: 0;
+  border-radius: var(--br-10);
+  border: 2px solid var(--color-wheat-100);
+  box-sizing: border-box;
+}
+.iconBox,
+.iconBoxItem {
+  z-index: 1;
+}
+.iconBoxItem {
+  right: 0;
+  bottom: 0;
+  filter: blur(4px);
+  border-radius: var(--br-10);
+  border: 2px solid var(--color-wheat-100);
+  box-sizing: border-box;
+}
+.iconBox {
+  width: 64px;
+  height: 57px;
+  margin: 0 !important;
+  right: -3.23%;
+  bottom: -7.55%;
+}
+.dataStackBox {
+  width: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-16) 13px;
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-10);
+}
+
+.technicalSupport {
+  align-self: stretch;
+  position: relative;
+  text-align: center;
+  font-size: var(--font-size-25);
+  color: var(--color-white);
+  font-family: var(--font-itc-avant-garde-gothic-std);
+  font-weight: 400;
+  line-height: 1.2;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.smallBusinessLoans {
+  align-self: stretch;
+  position: relative;
+  text-align: center;
+  font-size: var(--font-size-25);
+  color: var(--color-white);
+  font-family: var(--font-itc-avant-garde-gothic-std);
+  font-weight: 400;
+  line-height: 1.2;
+  word-break: break-word;
+  hyphens: auto;
+}
+.sellingPointL {
+  width: 180px;
+  min-width: 150px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 68px;
+  z-index: 1;
+  word-break: break-word;
+  padding-left: 5vw;
+  align-self: flex-start;
+}
+
+.binocularsIcon {
+  width: 37px;
+  height: 24px;
+  position: relative;
+  z-index: 0;
+  margin: 15 auto;
+}
+.iconBox1 {
+  width: 64px;
+  height: 57px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: -1.79%;
+  left: 0;
+  z-index: 1;
+}
+.binocularsBox,
+.sellingPointC {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.binocularsBox {
+  width: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-16) 13px;
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-10);
+}
+.sellingPointC {
+  width: 180px;
+  min-width: 150px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 68px;
+  z-index: 2;
+  align-self: flex-start;
+}
+.plantIcon {
+  width: 34px;
+  height: 31px;
+  position: relative;
+  z-index: 0;
+  display: block;
+  margin: 15 auto;
+}
+.iconBox2 {
+  width: 64px;
+  height: 57px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.plantBox,
+.sellingPointR {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.plantBox {
+  width: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 13px var(--padding-15);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-10);
+}
+.sellingPointR {
+  width: 180px;
+  min-width: 150px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 58px;
+  z-index: 3;
+  align-self: flex-start;
+}
+
+.sellingPoints {
+  width: 100%;
+  height: 480px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 97px 5vw;
+  position: relative;
+  gap: var(--gap-20);
+  z-index: 1;
+  margin-top: -118.1px;
+  box-sizing: border-box;
+}
+.ellipseDescriptionParent {
+  flex-direction: column;
+  padding: 0 var(--padding-2);
+}
+
+@media screen and (max-width: 850px) {
+  .lineElementsParent {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.sellingPointsFrameDesign {
+    gap: 112px;
+  }
+  .technicalSupport {
+    font-size: var(--font-size-24);
+  }
+  .sellingPoints {
+    padding-left: var(--padding-40);
+    padding-right: 52px;
+    box-sizing: border-box;
+  }
+  .introFrame {
+    gap: 86px;
+  }
+
+
+

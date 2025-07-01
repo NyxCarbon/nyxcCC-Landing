@@ -1,0 +1,169 @@
+.floatingBlob {
+  width: 200%;
+  height: 60%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom:10;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 0; 
+}
+
+  .floatingBlob::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at center, transparent 50%, rgba(9, 0, 18,
+  0.9) 100%);
+    pointer-events: none;
+  }
+
+
+  
+
+.pronouncedNixSeeTheContainer {
+  position: relative;
+}
+
+.pronouncedNixSeeTheNameCWrapper {
+  align-self: stretch;
+  height: 125.4px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 300px;
+  box-sizing: border-box;
+  text-align: center;
+  text-indent: 40px;
+  font-size: var(--font-size-20);
+  color: var(--color-white);
+  font-family: var(--font-itc-avant-garde-gothic-std);
+  flex-shrink: 0;
+  z-index: 3;  /* ← Above floating blob */
+}
+.environmentalMarketsPose,
+.nyxcIsDedicated {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 300px;
+}
+.nyxcIsDedicated {
+  align-self: stretch;
+  height: 125.4px;
+  position: relative;
+  font-size: var(--font-size-20);
+  font-family: var(--font-itc-avant-garde-gothic-std);
+  color: var(--color-white);
+  text-align: center;
+  flex-shrink: 0;
+  margin-bottom: 35px;
+  z-index: 3;  /* ← Above floating blob */
+}
+.environmentalMarketsPose {
+  align-self: stretch;
+  height: 125.4px;
+  position: relative;
+  font-size: var(--font-size-20);
+  font-family: var(--font-itc-avant-garde-gothic-std);
+  color: var(--color-white);
+  text-align: center;
+  flex-shrink: 0;
+  z-index: 3;  /* ← Above floating blob */
+}
+.aboutChild {
+  width: 100%;
+  height: 687px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.about {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 162.9px 65px;
+  margin: 100px 0;
+  box-sizing: border-box;
+  gap: px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: var(--font-size-20);
+  color: var(--color-white);
+  font-family: var(--font-itc-avant-garde-gothic-std);
+}
+@media screen and (max-width: 1200px) {
+  .pronouncedNixSeeTheNameCWrapper {
+    padding-left: 78px;
+    padding-right: 78px;
+    box-sizing: border-box;
+  }
+  .nyxcIsDedicated {
+    padding-left: 78px;
+    padding-right: 78px;
+    box-sizing: border-box;
+  }
+  .environmentalMarketsPose {
+    padding-left: 78px;
+    padding-right: 78px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .environmentalMarketsPose,
+  .nyxcIsDedicated,
+  .pronouncedNixSeeTheContainer {
+    font-size: var(--font-size-20);
+  }
+}
+@media screen and (max-width: 750px) {
+  .pronouncedNixSeeTheNameCWrapper {
+    padding-left: 39px;
+    padding-right: 39px;
+    box-sizing: border-box;
+  }
+  .nyxcIsDedicated {
+    padding-left: 39px;
+    padding-right: 39px;
+    box-sizing: border-box;
+  }
+  .environmentalMarketsPose {
+    padding-left: 39px;
+    padding-right: 39px;
+    box-sizing: border-box;
+  }
+  .about {
+    gap: 115px;
+    padding-left: var(--padding-32);
+    padding-right: var(--padding-32);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .environmentalMarketsPose,
+  .nyxcIsDedicated,
+  .pronouncedNixSeeTheContainer {
+    font-size: var(--font-size-18);
+  }
+  .about {
+    gap: 57px;
+  }
+}

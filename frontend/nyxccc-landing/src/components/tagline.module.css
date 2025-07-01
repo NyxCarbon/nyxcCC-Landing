@@ -1,0 +1,126 @@
+.floatingBlob {
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom:10;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 0 ; 
+  object-fit: cover;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.planetGlbPlaceholderWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -800px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding-left: 10px;
+}
+
+.planetGlbPlaceholder {
+  max-width: 100%;
+  height: auto;
+}
+
+.companyName,
+.tagLine {
+  align-self: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  width:auto;
+}
+.companyName {
+  margin: 0;
+  height: 127.9px;
+  font-size: 100px;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+.tagLine {
+  font-size: var(--font-size-25);
+}
+.nameAndTag {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-1);
+}
+
+.nameTagline {
+  display: flex;
+  justify-content: flex-start;
+}
+.getstartedButton {
+  width: 157px;
+  height: 55px;
+  position: absolute;
+  top: 5px;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  cursor: pointer;
+}
+.getstartedButton:hover {
+  transform: scale(1.05);
+  transition: transform 0.1s ease-in-out;
+}
+
+.getStartedWrapper {
+  position: absolute;
+  right: 10px;
+  bottom: 16px;
+  z-index: 3;
+}
+
+.getStartedButton {
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  width: 140px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.getStartedButton:hover {
+  transform: scale(1.05);
+}
+
+.nameTagline {
+  width: 935.7px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 100%;
+  min-height: fit-content;
+  padding: 10px 0;
+  overflow: visible;
+}
+.nameTaglineWrapper {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;      /* ← Align to top */
+  justify-content: center;      /* ← Center horizontally */
+  padding: 20px 0;              /* ← Add top/bottom padding */
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-100);
+  color: var(--color-white);
+  font-family: var(--font-itc-avant-garde-gothic-std);
+  position: relative;           /* ← Relative positioning for normal flow */
+  z-index: 2;
+}

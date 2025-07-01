@@ -1,0 +1,317 @@
+
+.glowLogo {
+  position: absolute;
+  left: 10px;
+  bottom: 22px;
+  top: 20px;
+}
+.commandBar,
+.commandBar2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-80);
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.commandBar {
+  filter: blur(4px);
+  border: 1px solid var(--color-honeydew-200);
+}
+.commandBar2 {
+  border: 1px solid var(--color-honeydew-100);
+}
+.navCenter {
+  height: 37px;
+  width: 727px;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.aboutButton {
+  margin: 0;
+  width: 90px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  cursor: pointer;
+}
+.aboutButton {
+  margin: 0;
+  width: 90px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  cursor: pointer;
+}
+.supportersButton {
+  margin: 0;
+  width: 120px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  cursor: pointer;
+}
+.lendingButton {
+  margin: 0;
+  width: 100px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  cursor: pointer;
+}
+.impactButton {
+  margin: 0;
+  width: 90px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  cursor: pointer;
+}
+.commandButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-20) 0 0;
+}
+.aboutPage,
+.raiseButton {
+  margin: 0;
+  width: 157px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+.aboutPage {
+  width: 118px;
+  white-space: pre-wrap;
+  cursor: pointer;
+}
+.commandButtons1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10) 0 0;
+}
+.teamButton {
+  margin: 0;
+  width: 105px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+.commands,
+.commandsWrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.commands {
+  margin: 0;                /* ← Remove margin since contained in navbar */
+  padding: 0 10px;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--font-size-20);
+  color: var(--color-white);
+  font-family: var(--font-itc-avant-garde-gothic-std);
+  box-sizing: border-box;
+  width: 100%;              /* ← Fill navbar container */
+  height: 100%;             /* ← Fill navbar height */
+  flex-shrink: 0;
+  gap: 40px;
+  display: flex;            /* ← Ensure flex display */
+  align-items: center;      /* ← Center within navbar */
+}
+.commandsWrapper {
+  flex-direction: column;
+  justify-content: center;  /* ← Center vertically */
+  align-items: center;      /* ← Center horizontally */
+  padding: 0;               /* ← Remove padding */
+  z-index: 3;               /* ← Above navbar */
+  position: absolute;       /* ← Position over navbar */
+  top: 0;
+  left: 0;
+  width: 100%;              /* ← Full width for centering */
+  height: 100%;             /* ← Full height */
+}
+.navBar {
+  width: 677px;
+  height: 40px;
+  position: absolute;
+  margin: 022 0 0 0;
+  top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;      /* ← Center items vertically */
+  justify-content: center;  /* ← Center the nav content */
+  z-index: 2;               /* ← Above navCenter background */
+  flex-shrink: 0;
+  left: 50%;                /* ← Center horizontally */
+  transform: translateX(-50%);  /* ← Perfect centering */
+  bottom: 22px;
+}
+
+.getstartedButton {
+  width: 157px;
+  height: 55px;
+  position: absolute;
+  top: 1px;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.getstartedButton:hover {
+  transform: scale(1.05);
+  transition: transform 0.1s ease-in-out;
+}
+
+.getStartedWrapper {
+  position: absolute;
+  right: 5px;
+  top:40px;
+  z-index: 3;
+}
+
+.getStartedButton {
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  width: 140px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.getStartedButton:hover {
+  transform: scale(1.05);
+}
+.headerNav {
+  align-self: stretch;
+  height: 94px;
+  flex-direction: column;        /* ← Fix to top */
+  top: 0;                   /* ← Remove any top spacing */
+  left: 0;
+  right: 0;
+  width: 100vw;             /* ← Use viewport width instead */
+  margin: 0;                /* ← Remove any margin */
+  padding: 0;               /* ← Remove any padding */
+  z-index: 100;
+  box-sizing: border-box;   /* ← Include padding/border in width */
+}
+
+.planetGlbPlaceholder {
+  width: 100%;
+  position: relative;
+  max-height: 100%;
+  height: auto;
+  object-fit: cover;
+  max-width: 100%;
+  z-index: 1;
+}
+.planetGlbPlaceholderWrapper {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-20) 0 23px;
+}
+.headerNavParent {
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 1525.3px;
+}
+
+
+
+@media screen and (max-width: 1350px) {
+  .headerNavParent {
+    padding-bottom: 991px;
+    box-sizing: border-box;
+  }
+   .navBar {
+      width: 550px;
+      left: 50%;                /* ← Center horizontally */
+      transform: translateX(-50%);  /* ← Perfect centering */
+    }
+    .commands {
+      width: 520px;
+      font-size: var(--font-size-18);
+    }
+}
+
+@media screen and (max-width: 1340px) {
+  .navBar {
+    width: 500px;              /* ← Slightly smaller width */
+    left: 50%;                 /* ← Center horizontally */
+    transform: translateX(-50%);   /* ← Perfect centering */
+  }
+  .commands {
+    width: 470px;              /* ← Adjust to fit */
+    font-size: var(--font-size-17);
+    gap: 30px;                 /* ← Reduce gap between items */
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navBar {
+    width: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .commands {
+    width: 420px;
+    font-size: var(--font-size-16);
+  justify-content: center;
+  padding: 8px 15px; 
+  }
+  .navCenter {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
+
+@media screen and (max-width: 1220px) {
+  .headerNavParent {
+    padding-bottom: 644px;
+    box-sizing: border-box;
+  }
+  .navBar {
+  display: none;
+  }
+  .navCenter {
+  display: none;
+  }  
+  .commands {
+  display: none;
+  }
+  .commandsWrapper {
+  display: none;
+  }  
+}
+
+@media screen and (max-width: 800px) {
+  .headerNavParent {
+    padding-bottom: 419px;
+    box-sizing: border-box;
+  }
+}
+

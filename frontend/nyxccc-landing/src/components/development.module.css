@@ -1,0 +1,153 @@
+.communityDevelopmentWrapper {
+  position: relative;
+  z-index: 2;
+  margin-top: px;
+  margin-bottom: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.communityDevelopment {
+  font-family: (--font-itc-avant-garde-gothic-std);
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.01em;
+
+}
+
+.trayRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 90px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 48px auto;
+  position: relative;
+  z-index: 1;
+}
+
+.trayBoxLeft {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+  padding: 0px 80px 0px 90px;
+  min-width: 30%;
+  bottom: 17vw;                  /* ← Position within image bounds */
+  left: 5%;             /* ← Offset from left edge */
+  
+}
+
+.trayBoxRight {
+  display: flex;
+  justify-content: right;
+  text-align: right;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+  padding: 0px 80px 0px 90px;
+  min-width: 30%;
+  bottom: 17vw;                  /* ← Position within image bounds */
+  right: 5%; 
+}
+
+.trayBox {
+  width: 100%;
+  max-width: 481px;
+  min-height: 200px;
+  color: #fff;
+  font-family: var(--font-itc-avant-garde-gothic-std);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 36px 32px;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.communityBoxLeft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.communityBoxRight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: cover;
+}
+
+  .communityBoxLeft,
+  .communityBoxRight {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: contain;  /* ← Change from cover to contain */
+    max-width: 420px;     /* ← Constrain to original image size */
+    max-height: 320px;    /* ← Constrain to original image size */
+  }
+
+
+
+.development {
+  width: 100vw;
+  min-height: 100vh;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.developmentSection {
+  width: 100vw;
+  height:800px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutChild {
+  width: 100vw;
+  height: 687px;
+  position:relative;
+  margin: 150 !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 100vw;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 0;
+  top: calc(50% + 100px); 
+}
+

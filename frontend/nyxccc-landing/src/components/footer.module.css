@@ -1,0 +1,223 @@
+
+
+.discord59688981Icon {
+  height: 33px;
+  width: 33px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.discordDivider {
+  height: 40px;
+  width: 1px;
+  position: relative;
+  border-right: 1px solid var(--color-white);
+  box-sizing: border-box;
+}
+.discordBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 10px 0 0;
+  gap: 25px;  /* ← Increased from 17px */
+}
+
+.about {
+  position: relative;
+  line-height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+.contact,
+.contactWrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact {
+  width: 63px;
+  height: 24px;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contactWrapper {
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 7px;
+}
+
+.contactBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;;
+  gap: 30px;  /* ← Increased from 21px */
+}
+
+.supportnyxcnet {
+  position: relative;
+  margin-left: 10px;
+}
+
+.supportnyxcnetWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-10);
+}
+
+.supportBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 var(--padding-16) 0 0;
+  gap: 25px;  /* ← Increased from var(--gap-4) */
+}
+
+.about1 {
+  width: 45px;
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  flex-shrink: 0;
+  padding: 0 10px 0 ;
+}
+.about {
+  width: 34px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footerColumn,
+.footerNav {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.footerNav {
+  align-items: flex-end;
+  justify-content: left;
+  gap: var(--gap-3);
+}
+
+.footerColumn {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 34px;
+  box-sizing: border-box;
+}
+
+.div {
+    width: 252px;
+    position: absolute;
+    font-size: var(--font-size-14);
+    line-height: 18px;
+    font-weight: 500;
+    font-family: var(--font-roboto);
+    display: inline-block;
+    left: 20px;
+    top: 80px;  /* ← Match the footer2 padding-top instead of bottom positioning */
+    margin-top: 50px; /* ← Add margin to align with nav text baseline */
+    padding: 0 0 10 0;
+}
+
+.div::after {
+    content: "";
+    display: block;
+    height: 20px;  /* ← Creates space below */
+}
+
+.footer2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 70 0 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-30);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-15);
+  color: var(--color-white);
+  font-family: var(--font-itc-avant-garde-gothic-std);
+}
+
+.nyxcLogoWhite11 {
+  position: absolute;
+  top: 75px;
+  left: 20px;
+  width: 173.2px;
+  height: 41px;
+  object-fit: cover;
+}
+
+.footer1 {
+  width: 100%;
+  height: 190px;
+  position: relative;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+@media screen and (max-width: 430px) {
+  .footerNav {
+    flex-wrap: wrap;
+  }
+  .footer1 {
+    height: auto;
+    min-height: 190;
+  }
+  .div {
+    opacity: 0.3;
+    transition: opacity 0.3s ease-out;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .footerNav {
+    flex-wrap: wrap;
+  }
+  .footer1 {
+    height: auto;
+    min-height: 190;
+  }
+  .div {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 299px) {
+  .footerNav {
+    flex-wrap: wrap;
+  }
+  .footer1 {
+    height: auto;
+    min-height: 190;
+  }
+}

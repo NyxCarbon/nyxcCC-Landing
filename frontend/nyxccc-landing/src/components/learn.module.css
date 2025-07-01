@@ -1,0 +1,99 @@
+.connectDesc {
+  align-self: center;
+  position: center;
+  text-align: center;
+  white-space: pre-wrap;
+  height: 1px;
+  margin-top: 300px;
+}
+
+.learnButtonSimpleChild {
+  position: absolute;
+  height: 23.5%;
+  top: 99.22%;
+  bottom: -22.72%;
+  left: calc(50% - 50px);
+  max-height: 100%;
+  width: 100px;
+}
+.learnButtonSimple {
+  width: 160px;
+  height: 120px;
+  position: relative;
+
+}
+.connectDescParent,
+.learnSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.connectDescParent {
+  align-self: stretch;
+  gap: 1px;
+}
+.learnSection {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 667px;
+  z-index: 10;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .learnSection {
+    width: 90%;
+    padding: 15px;
+  }
+  .connectDesc {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  .learnButtonSimple {
+    width: 140px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .learnSection {
+    width: 95%;
+    padding: 10px;
+  }
+  .connectDesc {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+  .learnButtonSimple {
+    width: 120px;
+    height: 80px;
+  }
+  .learnButtonSimpleChild {
+    width: 80px;
+    left: calc(50% - 40px);
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .learnSection {
+    width: 98%;
+    padding: 5px;
+  }
+  .connectDesc {
+    font-size: 12px;
+    padding: 0 3px;
+  }
+  .learnButtonSimple {
+    width: 100px;
+    height: 60px;
+  }
+  .learnButtonSimpleChild {
+    width: 60px;
+    left: calc(50% - 30px);
+  }
+}
+
