@@ -266,7 +266,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 97px 5vw;
+  padding: 97px;
   position: relative;
   gap: var(--gap-20);
   z-index: 1;
@@ -279,9 +279,42 @@
 }
 
 @media screen and (max-width: 850px) {
-  .lineElementsParent {
+    .fadedBoxChild,
+    .fadedBoxItem {
+    display:none;
+    }
+    .lineElementsParent {
     display: none;
-  }
+    }
+    .sellingPoints {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    height: auto;;
+    justify-content: center;
+    margin: 0 auto;
+    width:100%;
+    max-width: 100px;
+
+    }
+    .sellingPointL,
+    .sellingPointC,
+    .sellingPointR {
+    width: 100%;
+    max-width: 300px;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    }
+    .technicalSupport,
+    .smallBusinessLoans {
+    text-align: center;
+    font-size: var(--font-size-20);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 200px;
+    margin:auto;
+    }
 }
 
 

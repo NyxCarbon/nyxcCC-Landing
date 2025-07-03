@@ -1,24 +1,39 @@
-.nyxcSupporterNetwork {
+.aboutChild {
+  width: 100vw;
+  height: 687px;
   position: absolute;
+  margin: 0 !important;
+  top: 0;
   left: 50vw;
+  right: 40vw;
   transform: translateX(-50%);
-  font-size: var(--font-size-30);
-  padding: 40px 60px;
+  border-radius: 50%;
+  overflow: visible;
+  flex-shrink: 0;
+  z-index: 1;
   box-sizing: border-box;
-  text-align: flex-start;
-  display: felx;
-  justify-content: center;
-  align-items: center;
-  width: 700px;
-  z-index: 3;
-  max-width: 90%;          /* ← Limit width to allow wrapping */
-  white-space: normal;     /* ← Allow text to wrap */
-  word-wrap: break-word;   /* ← Break long words if needed */
-  overflow-wrap: break-word;
-  flex-direction: column;
+  
 }
 
-.smallBusinessOwners {
+.sectionTitle {
+  align-self: stretch;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50;
+  box-sizing: border-box;
+  text-align: center;
+  text-indent: 40px;
+  font-size: var(--font-size-30);
+  color: var(--color-white);
+  font-family: inherit;
+  flex-shrink: 0;
+  z-index: 3;
+  text-indent: 0 !important;
+}
+
+.desctiptionText {
   width: 500px;
   left:1vw;
   position: relative;
@@ -30,13 +45,43 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+  .desctiptionText {
+    margin-top: 50px;
+  }
+  
+  .example730ef7ab1Icon {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .desctiptionText {
+    margin-top: 70px;
+  }
+  
+  .example730ef7ab1Icon {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .desctiptionText {
+    margin-top: 90px;
+  }
+  
+  .example730ef7ab1Icon {
+    margin-top: 90px;
+  }
+}
+
 .screenShotAndDescription {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 0;
+  gap: 60;
   z-index: 2;
   text-align: left;
   font-size: var(--font-size-20);
@@ -74,38 +119,23 @@
 
 .example730ef7ab1Icon {
   position: relative;
-  margin-top: 30px;
+  margin-top: 0px;
   width: 100%;
   max-width:500px;           /* ← 50% of container */
   max-width: 400px;     /* ← Maximum width */
   height: auto;         /* ← Maintain aspect ratio */
 }
 
-@media screen and (max-width: 900px) {
-  .example730ef7ab1Icon {
-    opacity: 0.3;
-    transition: opacity 0.3s ease-out;
-  }
-}
 
-@media screen and (max-width: 800px) {
-  .example730ef7ab1Icon {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .nyxcSupporterNetwork {
-  box-sizing: border-box;
-  overflow-wrap: break-word;
-  width: 200px;
-  font-size: var(--font-size-30)
-  }
-
-  .smallBusinessOwners {
+  .desctiptionText {
     width: 400px;
+    max-width: 100%;
+    margin:0 auto;
     padding: 20px 30px;
     font-size: var(--font-size-20);
+    text-align: center;
+    
+
   }
   .screenShotAndDescription {
     padding: 30px 5%;
@@ -119,13 +149,26 @@
     padding: 30px 20px;
     font-size: var(--font-size-30);
   }
-}
 
 @media screen and (max-width: 480px) {
-  .smallBusinessOwners {
+  .sectionTitle {
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  width: 300px;
+  max-width: 100%;
+  margin:0 auto;
+  font-size: var(--font-size-30);
+  text-align: center;
+  text-indent: 0;
+  }
+
+  .desctiptionText {
     width: 320px;
+    max-width: 100%;
+    margin:0 auto;
     padding: 15px 20px;
     font-size: var(--font-size-18);
+    text-align: center;
   }
   .screenShotAndDescription {
     padding: 20px 3%;
@@ -141,28 +184,27 @@
   }
 }
 
-.aboutChild {
-  width: 100vw;
-  height: 687px;
-  position: absolute;
-  margin: 0 !important;
-  top: 0;
-  left: 50vw;
-  right: 40vw;
-  transform: translateX(-50%);
-  border-radius: 50%;
-  overflow: visible;
-  flex-shrink: 0;
-  z-index: 1;
-  box-sizing: border-box;
-  
-}
 
 @media screen and (max-width: 356px) {
-  .smallBusinessOwners {
+  
+  .sectionTitle {
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  width: 300px;
+  max-width: 100%;
+  margin:0 auto;
+  font-size: var(--font-size-30);
+  text-align: center;
+  }
+
+  
+  .desctiptionText {
     width: 280px;
+    max-width: 100%;
+    margin:0 auto;
     padding: 10px 15px;
     font-size: var(--font-size-16);
+    text-align: center;
   }
   .screenShotAndDescription {
     padding: 15px 2%;
@@ -172,8 +214,31 @@
     padding: 30px 15px;
     box-sizing: border-box;
   }
-  .nyxcSupporterNetwork {
-    padding: 15px 20px;
-    font-size: var(--font-size-25);
+
+}
+
+
+@media screen and (max-width: 900px) {
+  .example730ef7ab1Icon {
+    opacity: 0.3;
+    transition: opacity 0.3s ease-out;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .example730ef7ab1Icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sectionTitle {
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  width: 300px;
+  max-width: 100%;
+  margin:0 auto;
+  font-size: var(--font-size-30);
+  text-align: center;
   }
 }

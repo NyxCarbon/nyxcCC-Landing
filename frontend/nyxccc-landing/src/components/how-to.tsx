@@ -35,7 +35,7 @@ const HowTo: NextPage<HowToType> = ({ className = "" }) => {
           Opt into flexible financing options for environmental markets.
         </div>
       </section>
-      <div className={[styles.tray21, className].join(" ")}>
+      <div className={[styles.centerBox, className].join(" ")}>
         <section className={styles.CenterBox}>
           <Image
             className={styles.centerBoxChild3}
@@ -50,7 +50,7 @@ const HowTo: NextPage<HowToType> = ({ className = "" }) => {
         <section className={styles.signUpGroup}>
           <h1 className={styles.signUp1}>Sign Up</h1>
           <div className={styles.take30Seconds1}>
-            Take 30 seconds to create a profile and schedule an introductory call.
+            Schedule an introductory call to see if nyxc is a fit for your business.
           </div>
           <div className={styles.getStartedWrapper}>
             <Image
@@ -66,7 +66,7 @@ const HowTo: NextPage<HowToType> = ({ className = "" }) => {
       <div className={[styles.tray12, className].join(" ")}>
         <section className={styles.leftBox2}>
           <Image
-            className={styles.leftbox2}
+            className={styles.leftBox2}
             loading="lazy"
             width={396.8}
             height={460}

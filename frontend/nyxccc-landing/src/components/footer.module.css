@@ -187,7 +187,8 @@
 
 @media screen and (max-width: 430px) {
   .footerNav {
-    flex-wrap: wrap;
+    flex-wrap: column;
+    justify-content: center;
   }
   .footer1 {
     height: auto;
@@ -197,6 +198,8 @@
     opacity: 0.3;
     transition: opacity 0.3s ease-out;
   }
+
+
 }
 
 @media screen and (max-width: 356px) {

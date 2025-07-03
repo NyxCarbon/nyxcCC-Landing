@@ -11,6 +11,14 @@ const openExternalLink = (url: string) => {
 };
 
 const Footer: NextPage<FooterProps> = ({ className = "" }) => {
+
+const onLogoClick = () => {
+  const element = document.getElementById("");
+  if (element) {
+    element.scrollIntoView({ block: "start", behavior: "smooth" });
+  }
+};
+
   return (
     <div className={[styles.footer1, className].join(" ")}>
       <section className={styles.footer2}>
@@ -43,14 +51,15 @@ const Footer: NextPage<FooterProps> = ({ className = "" }) => {
               </div>
               <div className={styles.discordDivider} />
             </div>
-            <div className={styles.contactWrapper}>
-              <div className={styles.about}>
-                <div className={styles.about1}>About</div>
-              </div>
-            </div>
           </div>
         </div>
         </section>
+         <div className={styles.nyxcLogoWhite11}>
+                <h2
+                  className={styles.nyxcLogoWhite11}
+                  onClick={onLogoClick}
+                >{``}</h2>
+              </div>
         <Image
         className={styles.nyxcLogoWhite11}
         loading="lazy"

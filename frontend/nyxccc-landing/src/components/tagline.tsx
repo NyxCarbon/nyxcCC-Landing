@@ -25,15 +25,7 @@ type TaglineProps = {
 
 const Tagline: NextPage<TaglineProps> = ({ className = "" }) => {
   return (
-    <section className={[styles.aboutSection, className].join(" ")}>
-      <Image
-            className={styles.floatingBlob}
-            width={1440}
-            height={1000}
-            sizes="100vw"
-            alt=""
-            src="/nyxccc-img/floatingblob.gif"
-          />
+    <section className={[styles.tagline, className].join(" ")}>
       {/* Placeholder image below nav bar */}
       <div className={styles.planetGlbPlaceholderWrapper}>
         <Image

@@ -9,6 +9,7 @@
   margin-bottom: 48px;
   margin-right: 1vw;
   letter-spacing: 0.01em;
+  z-index: 2;
 }
 
 .teamPhotos {
@@ -33,7 +34,8 @@
   justify-content: flex-start; 
   z-index: 1;
   margin: 10px;
-  margin-bottom: 60px;      /* ← Add bottom margin to make room for name */
+  margin-bottom: 60px;  
+  aspect-ratio: 240/340;     /* Maintain card proportions for different screens */
 }
 
 
@@ -76,12 +78,12 @@
 /* Style the actual member photo (second memberPhoto) */
 .memberPhoto:last-child {
   position: relative;
-  width: 170px;            /* ← Smaller to fit inside card */
+  width: 170px;
   height: 180px;
   border-radius: 16px;
   object-fit: cover;
-  margin-top: 50px;        /* ← Position within card */
-  z-index: 2;              /* ← Above background */
+  margin-top: clamp(30px, 8vw, 50px);
+  z-index: 2;
   background: transparent;
 }
 

@@ -1,7 +1,25 @@
 .nyxcSupporterNetwork {
-  align-self: stretch;
-  position: relative;
+  position: absolute;
+  left: 50vw;
+  transform: translateX(-50%);
+  font-size: var(--font-size-30);
+  padding: 20px 60px;
+  box-sizing: border-box;
+  text-align: flex-start;
+  display: felx;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  z-index: 3;
+  max-width: 90%;          /* ← Limit width to allow wrapping */
+  white-space: normal;     /* ← Allow text to wrap */
+  word-wrap: break-word;   /* ← Break long words if needed */
+  overflow-wrap: break-word;
+  flex-direction: column;
 }
+
+
+
 .logoTrayChild {
   display: none;
 }
@@ -52,6 +70,8 @@
   box-sizing: border-box;
   position: relative;
   gap: 15vw;
+  z-index:1;
+  margin-top: 60px;
 }
 .partnerLogos,
 .partnerLogos1,
@@ -83,3 +103,111 @@
   color: var(--color-white);
   font-family: var(--font-itc-avant-garde-gothic-std);
 }
+
+@media screen and (max-width: 1200px) {
+  .logoTray {
+    background-size: 80%;
+  }
+  
+  .watsonLogoIcon {
+    width: 140px;
+    height: 35px;
+  }
+  
+  .bankOfMontrealLogo1Icon {
+    width: 140px;
+  }
+  
+  .logosInTray {
+    gap: 12vw;
+    padding: var(--padding-36) 8vw;
+  }
+
+    .nyxcSupporterNetwork {
+    padding: 15px 20px;
+    font-size: var(--font-size-25);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  
+  .nyxcSupporterNetwork {
+    text-align:center
+  }
+  
+  .logoTray {
+    background-size: 70%;
+  }
+  
+  .watsonLogoIcon {
+    width: 120px;
+    height: 30px;
+  }
+  
+  .bankOfMontrealLogo1Icon {
+    width: 120px;
+    height: 30px;
+  }
+  
+  .logosInTray {
+    gap: 10vw;
+    padding: var(--padding-36) 6vw;
+  }
+
+    .nyxcSupporterNetwork {
+    padding: 15px 20px;
+    font-size: var(--font-size-25);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logoTray {
+    background-size: 60%;
+  }
+  
+  .watsonLogoIcon {
+    width: 100px;
+    height: 25px;
+  }
+  
+  .bankOfMontrealLogo1Icon {
+    width: 100px;
+  }
+  
+  .logosInTray {
+    gap: 8vw;
+    padding: var(--padding-36) 4vw;
+  }
+
+    .nyxcSupporterNetwork {
+    padding: 15px 20px;
+    font-size: var(--font-size-25);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logoTray {
+    background-size: 50%;
+  }
+  
+  .watsonLogoIcon {
+    width: 80px;
+    height: 20px;
+  }
+  
+  .bankOfMontrealLogo1Icon {
+    width: 80px;
+  }
+  
+  .logosInTray {
+    gap: 6vw;
+    padding: var(--padding-36) 2vw;
+  }
+
+    .nyxcSupporterNetwork {
+    padding: 15px 20px;
+    font-size: var(--font-size-25);
+  }
+}
+
+
