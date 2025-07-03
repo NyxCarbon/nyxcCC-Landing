@@ -29,9 +29,10 @@ const MainPage: NextPage<MainPageProps> = ({ className = "" }) => {
       <AboutSection />
       <SellingPoint />
       <PartnerLogos />
+      <Development />
       <Borrower />
       <HowTo />
-      <Development />
+      
       <Team />
       <Learn />
       <div className={styles.floatingBlob}></div>

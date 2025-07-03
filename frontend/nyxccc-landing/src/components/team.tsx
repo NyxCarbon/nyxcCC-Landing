@@ -13,7 +13,7 @@ const openExternalLink = (url: string) => {
 const Team: NextPage<TeamProps> = ({ className = "" }) => {
   return (
     <section className={`${styles.teamSection} ${className}`}>
-      <h2 className={styles.advisoryBoardTitle}>Team</h2>
+      <h2 className={styles.teamTitle}>Team</h2>
       <div className={styles.teamPhotos}>
         <div className={styles.teamCardLeft}>
           <Image

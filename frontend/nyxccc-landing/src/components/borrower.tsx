@@ -14,9 +14,6 @@ const Example: NextPage = () => {
                 alt=""
                 src="/nyxccc-img/new Ellipse 20.png"
               />
-          <div className={styles.sectionTitle}>
-          Create a Profile to Apply for a Loan
-          </div>
         <section className={styles.screenShotAndDescription}>
           <div className={styles.descriptionText}>
             Small business owners in environmental markets face significant

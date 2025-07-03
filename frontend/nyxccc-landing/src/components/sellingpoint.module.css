@@ -111,6 +111,7 @@
   margin: 0 !important;
   right: -3.23%;
   bottom: -7.55%;
+  aspect-ratio: 64/57;
 }
 .dataStackBox {
   width: 64px;
