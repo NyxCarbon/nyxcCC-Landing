@@ -12,6 +12,7 @@
   flex-shrink: 0;
   z-index: 1;
   box-sizing: border-box;
+  margin-top: 100px;
   
 }
 
@@ -99,6 +100,7 @@
   line-height: normal;
   letter-spacing: normal;
   z-index: 7;
+
 }
 
 .example730ef7ab1Icon {

@@ -21,6 +21,7 @@
   align-items: flex-start;
   width: 100%;
   max-width: 900px;
+  padding-top: 20px;
   margin: 0 auto;  /* ← Center the container horizontally */
 }
 
@@ -83,7 +84,7 @@
   height: 180px;
   border-radius: 16px;
   object-fit: cover;
-  margin-top: clamp(30px, 8vw, 50px);
+  margin-top: clamp(80px, 8vw, 50px);
   z-index: 2;
   background: transparent;
 }

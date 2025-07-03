@@ -1,4 +1,8 @@
-
+.newsletter {
+  color: var(--color-white);
+  cursor: pointer;
+  /* Add more styles as needed */
+}
 
 .discord59688981Icon {
   height: 33px;
@@ -8,7 +12,7 @@
   flex-shrink: 0;
 }
 
-.discordDivider {
+.divider {
   height: 40px;
   width: 1px;
   position: relative;
@@ -24,17 +28,6 @@
   gap: 25px;  /* ← Increased from 17px */
 }
 
-.about {
-  position: relative;
-  line-height: 24px;
-  width: 24px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  padding: 0;
-  box-sizing: border-box;
-  flex-direction: row;
-}
 
 .contact,
 .contactWrapper {
@@ -44,11 +37,13 @@
 
 .contact {
   width: 63px;
-  height: 24px;
+  height: 20px;
   flex-direction: row;
   justify-content: flex-start;
   padding: 0;
   box-sizing: border-box;
+  color: var(--color-white);
+  text-decoration: none;
 }
 
 .contactWrapper {
@@ -86,36 +81,22 @@
   gap: 25px;  /* ← Increased from var(--gap-4) */
 }
 
-.about1 {
-  width: 45px;
-  position: relative;
-  line-height: 24px;
-  display: inline-block;
-  flex-shrink: 0;
-  padding: 0 10px 0 ;
-}
-.about {
-  width: 34px;
-  height: 24px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 .footerColumn,
 .footerNav {
   display: flex;
   flex-direction: row;
   max-width: 100%;
+  
 }
 
 .footerNav {
-  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
   justify-content: left;
   gap: var(--gap-3);
+  align-items: center;
 }
 
 .footerColumn {
@@ -169,12 +150,12 @@
 }
 
 .nyxcLogoWhite11 {
-  position: absolute;
-  top: 75px;
-  left: 20px;
+  padding: 0 550 0 0;        /* Remove extra margin if any */
   width: 173.2px;
   height: 41px;
   object-fit: cover;
+  align-items: left;
+  flex-shrink: 0;
 }
 
 .footer1 {
@@ -183,6 +164,8 @@
   position: relative;
   line-height: normal;
   letter-spacing: normal;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 430px) {

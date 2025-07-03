@@ -315,3 +315,8 @@
   }
 }
 
+  @media screen and (max-width: 768px) {
+    .headerNav {
+      margin-bottom: 40px;
+    }
+  }
