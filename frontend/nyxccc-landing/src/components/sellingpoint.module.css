@@ -304,8 +304,9 @@
     width: 100%;
     max-width: 300px;
     align-items: center;
-    gap: 20px;
-    padding: 0;
+    gap: 30px;
+    padding: 20px;
+    margin: 20px 0;
     }
     .technicalSupport,
     .smallBusinessLoans {
@@ -313,8 +314,23 @@
     font-size: var(--font-size-20);
     word-wrap: break-word;
     overflow-wrap: break-word;
-    max-width: 200px;
-    margin:auto;
+    max-width: 250px;
+    margin: 15px auto;
+    line-height: 1.4;
+    }
+
+    .dataStackBox,
+    .binocularsBox,
+    .plantBox {
+    margin: 10px auto;
+    }
+
+    .databaseIcon,
+    .binocularsIcon,
+    .plantIcon {
+    position: relative;
+    margin: 15px auto;
+    display: block;
     }
 }
 

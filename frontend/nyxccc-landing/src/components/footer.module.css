@@ -97,6 +97,7 @@
   justify-content: left;
   gap: var(--gap-3);
   align-items: center;
+  position: relative;
 }
 
 .footerColumn {
@@ -150,12 +151,19 @@
 }
 
 .nyxcLogoWhite11 {
-  padding: 0 550 0 0;        /* Remove extra margin if any */
+  position: fixed;
+  left: 20px;  /* Pin to left edge of screen with 20px margin */
+  bottom: 60px;   /* Position from bottom of screen */
   width: 173.2px;
   height: 41px;
   object-fit: cover;
-  align-items: left;
   flex-shrink: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nyxcLogoWhite11.visible {
+  opacity: 1;
 }
 
 .footer1 {

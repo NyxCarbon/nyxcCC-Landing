@@ -18,17 +18,18 @@
 
 
 .desctiptionText {
-  width: 500px;
-  left:1vw;
+  width: 100%;
+  max-width: 500px;
   position: relative;
   white-space: pre-wrap;
   display: flex;
   align-items: flex-start;
   flex-shrink: 0;
-  padding: 30px 40px;
+  padding: 20px;
   box-sizing: border-box;
   text-align: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -62,7 +63,8 @@
 }
 
 .screenShotAndDescription {
-  width: 100%;
+  width: 90%;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,11 +75,12 @@
   color: var(--color-white);
   font-family: var(--font-itc-avant-garde-gothic-std);
   position: absolute;
-  top: 30%;
-  left:50%;
+  top: 25%;
+  left: 50%;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
-  gap: 60px
+  gap: 40px;
+  padding: 20px;
 }
 .example,
 .exampleSection {
@@ -92,7 +95,7 @@
   align-items: center;
   padding: 92px 67px;
   box-sizing: border-box;
-  gap: 161px;
+  gap: 200px;
 }
 .example {
   width: 100%;

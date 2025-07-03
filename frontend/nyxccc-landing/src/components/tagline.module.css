@@ -124,3 +124,9 @@
   position: relative;           /* ← Relative positioning for normal flow */
   z-index: 2;
 }
+
+@media screen and (max-width: 768px) {
+  .planetGlbPlaceholderWrapper {
+    margin-top: -700px;  /* Create more space from navbar */
+  }
+}

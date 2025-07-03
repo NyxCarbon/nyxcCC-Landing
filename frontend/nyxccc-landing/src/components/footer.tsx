@@ -1,4 +1,6 @@
+"use client";
 import type { NextPage } from "next";
+import { useEffect } from "react";
 import Image from "next/image";
 import styles from "./footer.module.css";
 
@@ -15,6 +17,30 @@ const Footer: NextPage<FooterProps> = ({ className = "" }) => {
 const onLogoClick = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+useEffect(() => {
+  const learnSection = document.querySelector('[class*="learn"]');
+  const logo = document.querySelector(`.${styles.nyxcLogoWhite11}`);
+  
+  if (!learnSection || !logo) return;
+  
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          logo.classList.add(styles.visible);
+        } else {
+          logo.classList.remove(styles.visible);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+  
+  observer.observe(learnSection);
+  
+  return () => observer.disconnect();
+}, []);
 
   return (
     <div className={[styles.footer1, className].join(" ")}>
