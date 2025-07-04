@@ -105,7 +105,8 @@
 
 .developmentSection {
   width: 100%;
-  height: 900px;
+  height: auto;
+  min-height: 900px;
   align-items: center;
   padding: 92px 67px;
   box-sizing: border-box;

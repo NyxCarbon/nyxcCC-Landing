@@ -32,7 +32,6 @@ const MainPage: NextPage<MainPageProps> = ({ className = "" }) => {
       <Development />
       <Borrower />
       <HowTo />
-      
       <Team />
       <Learn />
       <div className={styles.floatingBlob}></div>
