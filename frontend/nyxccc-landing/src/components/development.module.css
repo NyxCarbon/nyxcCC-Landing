@@ -101,12 +101,12 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-top: -70px;
 }
 
 .developmentSection {
   width: 100%;
-  height: auto;
-  min-height: 900px;
+  height: 900px;
   align-items: center;
   padding: 92px 67px;
   box-sizing: border-box;
@@ -114,6 +114,12 @@
 
 
 @media screen and (max-width: 750px) {
+  .developmentSection {
+    height: auto;
+    min-height: 600px;
+    margin-bottom: 100px;
+  }
+  
   .trayRow {
     flex-direction: column;
     align-items: center;

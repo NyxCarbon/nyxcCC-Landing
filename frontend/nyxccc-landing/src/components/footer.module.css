@@ -57,6 +57,7 @@
   flex-direction: row;
   align-items: flex-end;;
   gap: 30px;  /* ← Increased from 21px */
+
 }
 
 .supportnyxcnet {
@@ -106,6 +107,7 @@
   justify-content: flex-end;
   padding: 0 34px;
   box-sizing: border-box;
+   margin-top: 55px; /* to move right side footer content on y-axis */
 }
 
 .div {
@@ -117,7 +119,7 @@
     font-family: var(--font-roboto);
     display: inline-block;
     left: 20px;
-    top: 80px;  /* ← Match the footer2 padding-top instead of bottom positioning */
+    top: 50px;  /* ← Match the footer2 padding-top instead of bottom positioning */
     margin-top: 50px; /* ← Add margin to align with nav text baseline */
     padding: 0 0 10 0;
 }
@@ -140,7 +142,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 70 0 0 0;
+  padding: 0 0 0 0;
   box-sizing: border-box;
   gap: var(--gap-30);
   max-width: 100%;
