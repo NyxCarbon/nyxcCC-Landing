@@ -17,13 +17,10 @@ type HeaderProps = {
 const Navigate: NextPage<HeaderProps> = ({ className = "" }) => {
 
 
-  const getStartedHandler = () => {
-    if (typeof window !== 'undefined' && window.Calendly) {
-      window.Calendly.initPopupWidget({
-        url: 'https://calendly.com/brittany-salas/pilot-program?text_color=10031d&primary_color=10031d'
-      });
-    }
-  };
+  const openExternalLink = (url: string) => {
+  window.open(url, "_blank", "noopener,noreferrer");
+};
+
 
 const onAboutButtonTextClick = () => {
   const element = document.getElementById("comapny description");
@@ -106,11 +103,11 @@ const onImpactButtonTextClick = () => {
           <div className={styles.getStartedButton}>
           <Image
             src="/nyxccc-img/get-started.png"
-            onClick={getStartedHandler}
             alt="Beta access button"
             className={styles.getStartedButton}
             width={140}
             height={40}
+            onClick={() => openExternalLink("https://calendly.com/brittany-salas/nyxc-community-capital")}
           />
         </div>
         </div>

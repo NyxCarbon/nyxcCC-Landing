@@ -31,7 +31,7 @@ const Team: NextPage<TeamProps> = ({ className = "" }) => {
               height={22}
               alt="LinkedIn"
               src="/nyxccc-img/LinkedIn.svg"
-              onClick={() => openExternalLink("https://www.linkedin.com/in/brittany-salas/")}
+              onClick={() => openExternalLink("https://www.linkedin.com/in/brittanysalas/")}
             />
           </div>
           <Image
@@ -58,7 +58,7 @@ const Team: NextPage<TeamProps> = ({ className = "" }) => {
               height={22}
               alt="LinkedIn"
               src="/nyxccc-img/LinkedIn.svg"
-              onClick={() => openExternalLink("https://www.linkedin.com/in/george-kelly/")}
+              onClick={() => openExternalLink("https://www.linkedin.com/in/george-kelly-96a506131/")}
             />
           </div>
           <Image

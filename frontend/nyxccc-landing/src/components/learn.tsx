@@ -28,7 +28,7 @@ const Learn: NextPage<LearnProps> = ({ className = "" }) => {
               sizes="100vw"
               alt=""
               src="/nyxccc-img/Learn Button Simple.png"
-              onClick={() => openExternalLink("https://discord.gg/W9KAXfws")}
+              onClick={() => openExternalLink("https://lu.ma/user/usr-2xnTQA0eH8a83EM")}
             />
           </div>
         </div>

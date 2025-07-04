@@ -2,6 +2,10 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import styles from "./about.module.css";
 
+
+
+
+
 const About: NextPage = () => {
   return (
     <div className={styles.about}>

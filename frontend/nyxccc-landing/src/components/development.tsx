@@ -9,8 +9,8 @@ export type DevelopmentType = {
 
 const Development: NextPage<DevelopmentType> = ({ className = "" }) => {
   return (
-    <div className={[styles.developmentSection, className].join(" ")}>
-      <main className={styles.developmentSection}></main>
+    <section className={[styles.developmentContainer, className].join(" ")}>
+      <div className={styles.developmentSection}>
         {/* Community Development Title */}
         <div className={styles.communityDevelopmentWrapper}>
           <div className={styles.communityDevelopment}>
@@ -55,8 +55,8 @@ const Development: NextPage<DevelopmentType> = ({ className = "" }) => {
             </div>
           </div>
         </div>
-    </div>
-
+      </div>
+    </section>
   );
 };
 

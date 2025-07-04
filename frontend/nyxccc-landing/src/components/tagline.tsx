@@ -10,17 +10,14 @@ declare global {
   }
 }
 
-const getStartedHandler = () => {
-  if (typeof window !== 'undefined' && window.Calendly) {
-    window.Calendly.initPopupWidget({
-      url: 'https://calendly.com/brittany-salas/pilot-program?text_color=10031d&primary_color=10031d'
-    });
-  }
+  const openExternalLink = (url: string) => {
+  window.open(url, "_blank", "noopener,noreferrer");
 };
 
 type TaglineProps = {
   className?: string;
 };
+
 
 
 const Tagline: NextPage<TaglineProps> = ({ className = "" }) => {
@@ -51,11 +48,10 @@ const Tagline: NextPage<TaglineProps> = ({ className = "" }) => {
           </div>
           <Image
             src="/nyxccc-img/get-started.png"
-            onClick={getStartedHandler}
             alt="Beta access button"
-            className={styles.getStartedButton}
-            width={140}
+            width={120}
             height={40}
+            onClick={() => openExternalLink("https://calendly.com/brittany-salas/nyxc-community-capital")}
           />
  
         </div>

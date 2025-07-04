@@ -109,6 +109,7 @@
     padding: 15px 5px;
     gap: 20px;
     font-size: var(--font-size-18);
+    margin-top: 200px;
   }
   
   .titleAndDescription2 {

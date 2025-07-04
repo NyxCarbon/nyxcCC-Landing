@@ -2,15 +2,15 @@
   width: 100vw;
   height: 687px;
   position: absolute;
-  margin: 0 !important;
-  top: 0;
+  margin: 0 ;
+  top: -120px;
   left: 50vw;
   right: 40vw;
   transform: translateX(-50%);
   border-radius: 50%;
   overflow: visible;
   flex-shrink: 0;
-  z-index: 1;
+  z-index: 3;
   box-sizing: border-box;
   margin-top: 100px;
   
@@ -50,6 +50,9 @@
   .example730ef7ab1Icon {
     margin-top: 70px;
   }
+      .screenShotAndDescription {
+      top: calc(100vh + 200px); /* Below viewport + offset */
+    }
 }
 
 @media screen and (max-width: 356px) {
@@ -69,7 +72,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 2;
+  z-index: 3;
   text-align: center;
   font-size: var(--font-size-20);
   color: var(--color-white);
@@ -95,14 +98,14 @@
   align-items: center;
   padding: 92px 67px;
   box-sizing: border-box;
-  gap: 200px;
+  gap: 400px;
 }
 .example {
   width: 100%;
   align-items: flex-start;
   line-height: normal;
   letter-spacing: normal;
-  z-index: 7;
+  z-index: 3;
 
 }
 
@@ -135,19 +138,33 @@
   }
 
 @media screen and (max-width: 480px) {
+.aboutChild {
+  width: 100vw;
+  height: 687px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0px;
+  left: 50vw;
+  right: 40vw;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  overflow: visible;
+  flex-shrink: 0;
+  z-index: 3;
+  box-sizing: border-box;
 
+  
+}
   .desctiptionText {
-    width: 320px;
+    width: 280px;
     max-width: 100%;
-    margin:0 auto;
-    padding: 15px 20px;
+    margin: 0 auto;
+    padding: 15px 40px;
     font-size: var(--font-size-18);
     text-align: center;
+     margin-top: 100px;
   }
-  .screenShotAndDescription {
-    padding: 20px 3%;
-    gap: clamp(30px, 5vw, 80px); 
-  }
+
   .exampleSection {
     gap: 60px;
     padding: 40px 20px;
@@ -161,21 +178,17 @@
   .desctiptionText {
     width: 280px;
     max-width: 100%;
-    margin:0 auto;
-    padding: 10px 15px;
     font-size: var(--font-size-16);
     text-align: center;
+     margin-left: 0vw;
+      margin-right: 3vw;
   }
-  .screenShotAndDescription {
-    padding: 15px 2%;
   }
   .exampleSection {
     gap: 40px;
-    padding: 30px 15px;
     box-sizing: border-box;
   }
 
-}
 
 
 @media screen and (max-width: 900px) {
@@ -204,10 +217,12 @@
   .desctiptionText {
   box-sizing: border-box;
   overflow-wrap: break-word;
-  width: 300px;
+  width: 200px;
   max-width: 100%;
-  margin:0 auto;
+  margin-top:0 auto;
   font-size: var(--font-size-20);
   text-align: justify;
+
+  
   }
 }
