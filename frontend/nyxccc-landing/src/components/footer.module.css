@@ -191,8 +191,9 @@
     opacity: 0.3;
     transition: opacity 0.3s ease-out;
   }
-
-
+  .nyxcLogoWhite11 {
+  display: none;
+  }
 }
 
 @media screen and (max-width: 356px) {

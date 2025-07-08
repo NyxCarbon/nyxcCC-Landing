@@ -2,8 +2,7 @@
 .glowLogo {
   position: absolute;
   left: 10px;
-  bottom: 22px;
-  top: 20px;
+  top: 10px;
 }
 .commandBar,
 .commandBar2 {
@@ -188,7 +187,7 @@
 .getStartedWrapper {
   position: absolute;
   right: 5px;
-  top:40px;
+  top:20px;
   z-index: 3;
 }
 
