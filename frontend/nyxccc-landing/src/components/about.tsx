@@ -8,7 +8,7 @@ import styles from "./about.module.css";
 
 const About: NextPage = () => {
   return (
-    <div className={styles.about}>
+    <div id="company-description" className={styles.about}>
       <section className={styles.pronouncedNixSeeTheNameCWrapper}>
         <div className={styles.pronouncedNixSeeTheContainer}>
           <span>{`Pronounced `}</span>
@@ -38,7 +38,6 @@ const About: NextPage = () => {
         src="/nyxccc-img/new Ellipse 20.png"
         unoptimized
       />
-
     </div>
   );
 };

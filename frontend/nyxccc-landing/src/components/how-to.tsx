@@ -13,6 +13,7 @@ export type HowToType = {
 
 const HowTo: NextPage<HowToType> = ({ className = "" }) => {
   return (
+   <div id="loan-qualification" className={styles.confirmTerms1}>
     <div className={[styles.tray31, className].join(" ")}>
       <section className={styles.tray31}>
         <Image
@@ -59,6 +60,7 @@ const HowTo: NextPage<HowToType> = ({ className = "" }) => {
             />
           </div>
         </section>
+      </div>
       <div className={[styles.tray12, className].join(" ")}>
         <section className={styles.leftBox2}>
           <Image
@@ -79,17 +81,10 @@ const HowTo: NextPage<HowToType> = ({ className = "" }) => {
         </section>
       </div>
     </div>
-    </div>
+   </div>
   );
-}
+};
 
 export default HowTo;
-
-
-
-
-
-
-
 
 

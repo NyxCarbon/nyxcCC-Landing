@@ -6,20 +6,18 @@ export type DevelopmentType = {
   className?: string;
 };
 
-
 const Development: NextPage<DevelopmentType> = ({ className = "" }) => {
   return (
     <section className={[styles.developmentContainer, className].join(" ")}>
-      <div className={styles.developmentSection}>
-        {/* Community Development Title */}
+      <section id="community-development" className={[styles.developmentContainer, 
+  className].join(" ")}></section>
+        {/* Community Development Title 
         <div className={styles.communityDevelopmentWrapper}>
           <div className={styles.communityDevelopment}>
-            Community Development
-          </div>
-        </div>
+            Community Development */}
         {/* Two side-by-side boxes */}
         <div className={styles.trayRow}>
-          <div className={styles.trayLeft}>       {/* Community Box Left PNG as background */}
+          <div className={styles.trayLeft}>  {/* Community Box Left PNG as background */}
             <Image
               className={styles.communityBoxLeft}
               width={420}
@@ -55,7 +53,6 @@ const Development: NextPage<DevelopmentType> = ({ className = "" }) => {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 };

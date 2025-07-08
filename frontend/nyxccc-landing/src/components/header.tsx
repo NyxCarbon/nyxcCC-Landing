@@ -23,28 +23,28 @@ const Navigate: NextPage<HeaderProps> = ({ className = "" }) => {
 
 
 const onAboutButtonTextClick = () => {
-  const element = document.getElementById("comapny description");
+  const element = document.getElementById("company-description");
   if (element) {
     element.scrollIntoView({ block: "start", behavior: "smooth" });
   }
 };
 
 const onSupporterButtonTextClick = () => {
-   const element = document.getElementById("partner logos");
+   const element = document.getElementById("partner-logos");
   if (element) {
     element.scrollIntoView({ block: "start", behavior: "smooth" });
   }
 };
 
 const onLendingButtonTextClick = () => {
-  const element = document.getElementById("loan qualification");
+  const element = document.getElementById("loan-qualification");
   if (element) {
     element.scrollIntoView({ block: "start", behavior: "smooth" });
   }
 };
 
 const onImpactButtonTextClick = () => {
-  const element = document.getElementById("community development");
+  const element = document.getElementById("community-development");
   if (element) {
     element.scrollIntoView({ block: "start", behavior: "smooth" });
   }
