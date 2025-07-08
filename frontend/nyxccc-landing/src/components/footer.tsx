@@ -15,7 +15,10 @@ const openExternalLink = (url: string) => {
 const Footer: NextPage<FooterProps> = ({ className = "" }) => {
 
 const onLogoClick = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  const element = document.getElementById("back-to-top");
+  if (element) {
+    element.scrollIntoView({ block: "start", behavior: "smooth" });
+  }
 };
 
 useEffect(() => {
@@ -68,7 +71,7 @@ useEffect(() => {
                 sizes="100vw"
                 alt=""
                 src="/nyxccc-img/discord_5968898 1.svg"
-                onClick={() => openExternalLink("https://discord.gg/c9mtSHxEx8")}
+                onClick={() => openExternalLink("https://discord.gg/W9KAXfws")}
               />
               <div className={styles.divider} />
             </div>

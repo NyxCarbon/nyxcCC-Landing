@@ -162,6 +162,7 @@
   flex-shrink: 0;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  pointer-events: auto !important; 
 }
 
 .nyxcLogoWhite11.visible {

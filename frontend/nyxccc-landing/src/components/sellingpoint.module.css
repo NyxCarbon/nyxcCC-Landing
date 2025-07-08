@@ -219,10 +219,11 @@
 .plantIcon {
   width: 34px;
   height: 31px;
-  position: relative;
-  z-index: 0;
-  display: block;
-  margin: 15 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 .iconBox2 {
   width: 64px;

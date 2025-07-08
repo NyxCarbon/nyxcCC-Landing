@@ -53,6 +53,7 @@ const onImpactButtonTextClick = () => {
   return (
     <section className={[styles.headerNav, className].join(" ")}>
       <section className={styles.headerNav}>
+        <div id="back-to-top" className={styles.headerNav}></div>
         <div className={styles.rectangle} />
         <div className={styles.navBar}>
           <div className={styles.navCenter}>
