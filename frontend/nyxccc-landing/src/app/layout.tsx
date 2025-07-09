@@ -2,7 +2,8 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: `nyxccc landing page`,
+  title: "nyxcc Community Capital",
+
 };
 
 export default function RootLayout({
