@@ -2,7 +2,7 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: "nyxcc Community Capital",
+  title: "nyxc Community Capital",
 
 };
 
